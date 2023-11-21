@@ -1,8 +1,11 @@
 import { useState } from 'react'
+import { RecoilRoot } from 'recoil'
+
 import './App.css'
 
 import LogoMain from '../../components/Organisms/Logo/LogoMain'
 import FormTest from '../../components/Organisms/FormTest/FormMain'
+import AtomForm from '../../components/Organisms/AtomForm/AtomForm'
 
 function Top() {
   const [count, setCount] = useState(0)
@@ -15,8 +18,11 @@ function Top() {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
-        <FormTest />
       </div>
+      <FormTest />
+      <RecoilRoot>
+        <AtomForm />
+      </RecoilRoot>
     </>
   )
 }
