@@ -28,3 +28,7 @@ git init
 
 # react-hook-form 
 npm install react-hook-form
+
+# recoil
+npm install recoil
+
